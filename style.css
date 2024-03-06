@@ -26,12 +26,10 @@ h3 {
 }
 article {
   width: 900px;
-  float: left;
 }
 h1 {
   color: blue;
   font-size: 25px;
-  float: left;
   text-transform: uppercase;
   font-style: italic;
 }
@@ -47,16 +45,8 @@ p {
   margin-bottom: 15px;
   line-height: 1.5;
 }
-nav {
-  float: right;
-}
 nav a {
-  margin-left: 10px;
-}
-.main-header::after {
-  clear: both;
-  content: "";
-  display: inline-block;
+  margin-left: 20px;
 }
 ul,
 ol {
@@ -77,18 +67,12 @@ h4 {
 li {
   font-size: 20px;
 }
-
+h1::first-letter {
+  font-style: normal;
+}
 #Copyright {
   font-size: 10px;
   margin-top: 5px;
-}
-.author-img {
-  float: left;
-  margin-bottom: 10px;
-}
-.author-details {
-  float: left;
-  margin-left: 10px;
 }
 .author {
   font-size: 18px;
@@ -111,7 +95,6 @@ aside {
   border-top: 5px solid #1098ad;
   border-bottom: 5px solid #1098ad;
   padding: 50px 0;
-  float: right;
   width: 350px;
 }
 li {
@@ -166,8 +149,59 @@ h2::after {
   right: -30px;
 }
 footer {
-  clear: both;
-
   border-top: 1px solid #1098ad;
   text-align: center;
+}
+
+/* layOut using float */
+/*
+nav {
+  float: right;
+}
+footer{
+  clear: both; 
+}
+article {
+  float: left;
+}
+aside {
+  float: right;
+}
+.main-header::after {
+  clear: both;
+  content: "";
+  display: inline-block;
+}
+.author-img {
+  float: left;
+  margin-bottom: 10px;
+}
+.author-details {
+  float: left;
+  margin-left: 10px;
+}
+aside {
+  float: right;
+} */
+
+/* FLEX BOX */
+a {
+  margin-left: 20px;
+}
+.main-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.author-box{
+display: flex;
+align-items: center;
+
+}
+.author-details{
+margin-left:20px;
+margin-bottom:0;
+font-size: 18px;
+font-style: italic;
+
 }

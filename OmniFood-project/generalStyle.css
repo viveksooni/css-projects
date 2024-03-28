@@ -1,0 +1,126 @@
+/* 
+----01 Typography System
+
+Font size (px)::
+10/12/14/16/18/20/24/30/36/44/52/62/74/86/80
+
+---02 Colors
+-Primary : #e67e22
+-Tints: #fdf2e9
+-Shades:#cf711f
+-Accents: 
+-Greys: #555
+
+---03 Shadows 
+
+---04 Border-radius
+
+----05 White Space
+
+--spacing system (px)
+2/4/8/12/16/24/32/48/64/80/96/128
+*/
+
+/* 1 rem = 16px (by default) browser font size is 16px */
+/* rem indicate font size relative to root em(element) so if we change root (html) size rem will change accordingly, */
+/* but it will not respect user settings so we use the percentage value we want to set default to 10px so 10px/16px(default) = 0.625 , which will be 62.5%  */
+html {
+  font-size: 62.5%;
+}
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "rubik", sans-serif;
+  line-height: 1;
+  font-weight: 400;
+  color: #555;
+}
+/* General */
+.grid {
+  display: grid;
+  column-gap: 9.6rem;
+  row-gap: 6.9rem;
+}
+.grid--2-cols {
+  grid-template-columns: repeat(2, 1fr);
+}
+.grid--3-cols {
+  grid-template-columns: repeat(3, 1fr);
+}
+.grid--4-cols {
+  grid-template-columns: repeat(4, 1fr);
+}
+.grid--center-v {
+  align-items: center;
+}
+.heading-secondary,
+.heading-primary,
+.heading-tertiary {
+  /* color: #343a40; */
+  color: #333;
+  letter-spacing: -0.5px;
+  margin-bottom: 9.6rem;
+}
+.heading-primary {
+  font-size: 5.2rem;
+  font-weight: 700;
+  line-height: 1.05;
+}
+.heading-secondary {
+  font-size: 4.4rem;
+  line-height: 1.2;
+}
+.heading-tertiary {
+  font-size: 3rem;
+  line-height: 1.2;
+  margin-bottom: 3.2rem;
+}
+.subheading {
+  display: block;
+  font-size: 1.6rem;
+  text-transform: uppercase;
+  margin-bottom: 1.6rem;
+  letter-spacing: 0.75px;
+  font-weight: 700;
+  color: #cf711f;
+}
+.btn:link,
+.btn:visited {
+  display: inline-block;
+  background-color: #fff;
+  color: #fff;
+  font-weight: 600;
+  text-decoration: none;
+  font-size: 2rem;
+  padding: 1.6rem 3.2rem;
+  border-radius: 9px;
+  transition: all 0.3s;
+}
+
+.btn--primary:visited,
+.btn--primary:link {
+  background-color: #e67e22;
+}
+.btn-outline:link,
+.btn-outline:visited {
+  background-color: #fff;
+  color: #555;
+}
+.btn-outline:hover,
+.btn-outline:active {
+  background-color: #fae5d3;
+
+  box-shadow: inset 0 0 0 3px #fff;
+}
+
+.btn--primary:hover {
+  background-color: #cf711f;
+}
+
+.margin-right-sm {
+  margin-right: 1.6rem !important;
+}

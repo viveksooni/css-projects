@@ -11,7 +11,7 @@
     />
     <link rel="stylesheet" href="generalStyle.css" />
     <link rel="stylesheet" href="style.css" />
-    <title>VivekFood</title>
+    <title>OmniFood</title>
   </head>
   <body>
     <header class="header">
@@ -50,6 +50,7 @@
             </p>
             <a href="#" class="btn btn--primary margin-right-sm"
               >Start eating well</a
+            >
             >
             <a href="#" class="btn btn-outline">Learn more &darr;</a>
 
@@ -244,58 +245,61 @@
       </section>
       <section class="testimonial-section">
         <div class="testimonials-container">
-          <div class="testimonial-heading">
-            <span class="subheading">meals</span>
-            <h2 class="heading-tertiary">
-              Omnifood AI chooses from 5,000+ recipes
-            </h2>
-          </div>
-          <div class="customers-testimonials">
-            <div class="customer-testimonial">
-              <img src="img/customers/ben.jpg" alt="" class="testimonial-img" />
-              <p class="testimonial-text">
-                Inexpensive, healthy and great-tasting meals, without even
-                having to order manually! It feels truly magical.
-              </p>
-              <p class="testimonial-author">- Dave Bryson</p>
-            </div>
-            <div class="customer-testimonial">
+          <span class="subheading">Testimonials</span>
+          <h2 class="heading-secondary">Once you try it, you can't go back</h2>
+
+          <div class="testimonials">
+            <figure class="testimonial">
               <img
-                src="img/customers/steve.jpg"
-                alt=""
                 class="testimonial-img"
-              />
-              <p class="testimonial-text">
-                Inexpensive, healthy and great-tasting meals, without even
-                having to order manually! It feels truly magical.
-              </p>
-              <p class="testimonial-author">- Dave Bryson</p>
-            </div>
-            <div class="customer-testimonial">
-              <img
+                alt="Photo of customer Dave Bryson"
                 src="img/customers/dave.jpg"
-                alt=""
-                class="testimonial-img"
               />
-              <p class="testimonial-text">
+              <blockquote class="testimonial-text">
                 Inexpensive, healthy and great-tasting meals, without even
                 having to order manually! It feels truly magical.
-              </p>
-              <p class="testimonial-author">- Dave Bryson</p>
-            </div>
-            <div class="customer-testimonial">
+              </blockquote>
+              <p class="testimonial-name">&mdash; Dave Bryson</p>
+            </figure>
+
+            <figure class="testimonial">
               <img
-                src="img/customers/hannah.jpg"
-                alt=""
                 class="testimonial-img"
+                alt="Photo of customer Ben Hadley"
+                src="img/customers/ben.jpg"
               />
-              <p class="testimonial-text">
-                Inexpensive, healthy and great-tasting meals, without even
-                having to order manually! It feels truly magical.
-              </p>
-              <p class="testimonial-author">- Dave Bryson</p>
-            </div>
-            >
+              <blockquote class="testimonial-text">
+                The AI algorithm is crazy good, it chooses the right meals for
+                me every time. It's amazing not to worry about food anymore!
+              </blockquote>
+              <p class="testimonial-name">&mdash; Ben Hadley</p>
+            </figure>
+
+            <figure class="testimonial">
+              <img
+                class="testimonial-img"
+                alt="Photo of customer Steve Miller"
+                src="img/customers/steve.jpg"
+              />
+              <blockquote class="testimonial-text">
+                Omnifood is a life saver! I just started a company, so there's
+                no time for cooking. I couldn't live without my daily meals now!
+              </blockquote>
+              <p class="testimonial-name">&mdash; Steve Miller</p>
+            </figure>
+
+            <figure class="testimonial">
+              <img
+                class="testimonial-img"
+                alt="Photo of customer Hannah Smith"
+                src="img/customers/hannah.jpg"
+              />
+              <blockquote class="testimonial-text">
+                I got Omnifood for the whole family, and it frees up so much
+                time! Plus, everything is organic and vegan and without plastic.
+              </blockquote>
+              <p class="testimonial-name">&mdash; Hannah Smith</p>
+            </figure>
           </div>
         </div>
 
@@ -326,6 +330,76 @@
           </div>
           <div class="figure">
             <img src="img/gallery/gallery-9.jpg" alt="01" />
+          </div>
+        </div>
+      </section>
+
+      <section class="section-pricing">
+        <div class="container">
+          <span class="subheading">Pricing</span>
+          <h2 class="heading heading-secondary">
+            Eating well without breaking the bank
+          </h2>
+        </div>
+
+        <div class="container grid grid--2-cols">
+          <div class="pricing-plan pricing-plan--starter">
+            <header class="plan-header">
+              <p class="plan-name">Started</p>
+              <p class="plan-price"><span>$</span>399</p>
+              <p class="plan-text">per month.That's just $13 per meal</p>
+            </header>
+
+            <ul class="list">
+              <li class="list-item">
+                <ion-icon name="checkmark-outline"></ion-icon>
+                <span>1 meal per day</span>
+              </li>
+              <li class="list-item">
+                <ion-icon name="checkmark-outline"></ion-icon>
+                <span>Order between 11am and 9pm</span>
+              </li>
+              <li class="list-item">
+                <ion-icon name="checkmark-outline"></ion-icon>
+                <span>Delivery is free</span>
+              </li>
+              <li class="list-item">
+                <ion-icon name="close-outline"></ion-icon>
+                <span></span>
+              </li>
+            </ul>
+            <div class="plan-sign-up">
+              <a href="#" class="btn btn--primary">Start eating well</a>
+            </div>
+          </div>
+
+          <div class="pricing-plan pricing-plan--complete">
+            <header class="plan-header">
+              <p class="plan-name">Started</p>
+              <p class="plan-price"><span>$</span>649</p>
+              <p class="plan-text">per month.That's just $11 per meal</p>
+            </header>
+            <ul class="list">
+              <li class="list-item">
+                <ion-icon name="checkmark-outline"></ion-icon>
+                <span><strong>2</strong> meals per day</span>
+              </li>
+              <li class="list-item">
+                <ion-icon name="checkmark-outline"></ion-icon>
+                <span>Order <strong>24/7</strong></span>
+              </li>
+              <li class="list-item">
+                <ion-icon name="checkmark-outline"></ion-icon>
+                <span>Delivery is free</span>
+              </li>
+              <li class="list-item">
+                <ion-icon name="checkmark-outline"></ion-icon>
+                <span>Get access to latest recipes</span>
+              </li>
+            </ul>
+            <div class="plan-sign-up">
+              <a href="#" class="btn btn--primary">Start eating well</a>
+            </div>
           </div>
         </div>
       </section>
